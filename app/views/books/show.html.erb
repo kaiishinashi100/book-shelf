@@ -1,0 +1,33 @@
+<div class="contents row">
+  <div class="content_title" style="background-image: url(<%= "#"%>);">
+    <p><%= @book.title %></p>
+    <span class="user-name">
+      <a href="/users/<%= @book.user_id %>">
+        <span>投稿者</span><%= @book.user.nickname %>
+      </a>
+    </span>
+  </div>
+  <div class="container">
+    <% if current_user %>
+      <%= form_with(model: [@book, @comment], local: true) do |form| %>
+        <%= form.text_area :text, placeholder: "コメントする", rows: "2" %>
+        <%= form.submit "SEND" %>
+      <% end %>
+    <% else %>
+      <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
+    <% end %>
+    <div class="comments">
+      <h4>＜感想一覧＞</h4>
+      <% if @comments %>
+        <% @comments.each do |comment| %>
+        <div class="comment-box">
+          <p>
+            <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
+            <%= comment.text %>
+          </p>
+        </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
