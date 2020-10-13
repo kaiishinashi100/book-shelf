@@ -1,4 +1,4 @@
-<% if @books.length != 0 && user_signed_in?%>
+<% if @books.length != 0%>
 
 <div class="book-shelf">
   <div class="shelf">
@@ -19,5 +19,11 @@
     </div>
   </div>
 </div>
-
+<% else %>
+<div class="not-book-shelf-content">
+  <div class="not-book-shelf">
+    <div class="shelf-top">本を投稿しよう</div>
+    <div class="shelf-bottom"></div>
+  </div>
+</div>
 <% end %>
