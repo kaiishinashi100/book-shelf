@@ -1,0 +1,21 @@
+<% if @books.length != 0 %>
+  <div class="book-shelf">
+    <div class="shelf">
+      <div class="contents-row">
+        <% @books.each do |book| %>
+          <div class='item'>
+            <ul class="name">
+              <% if book.id != 0%>
+                <div class="content_post" >
+                  <li class="list">
+                    <%= link_to book.title %>
+                  </li>
+                </div>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+<% end %>
