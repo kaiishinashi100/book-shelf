@@ -1,0 +1,83 @@
+body {
+  background-color: #CCFFCC;
+}
+
+ul {
+  list-style-type: disc;
+}
+ 
+li {
+  padding: 0 10px 10px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  float: left;
+  -webkit-writing-mode: vertical-rl;
+}
+
+.item {
+  margin: 0.5vw;
+  border: medium solid rgb(0, 0, 0);
+  height: 190px;
+  background-color: rgb(246, 253, 255);
+  min-width: 0;
+}
+
+.name {
+  padding: 5px;
+  white-space: nowrap;
+  overflow: scroll;
+}
+
+.contents-row {
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+.header_right {
+  display: flex;
+  margin: 1vw;
+  width: auto;
+  height: 5vw;
+}
+
+.user_nav_grid-6 {
+  background-color: white;
+  margin-right: auto;
+  width: 30vw;
+  height: 50px;
+  border: 1px solid rgb(0, 0, 0);
+  margin: 10px;
+  text-align: center;
+  line-height: 2.7;
+}
+
+.grid-6 {
+  background-color: white;
+}
+
+.container {
+  margin-top: 15vh;
+}
+
+.book-shelf {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 120px;
+  padding: 5px;
+  height: auto;
+  background-color: #CC9966;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.shelf {
+  width: 90vw;
+  height: auto;
+  background-color: #CC9966;
+  border: 1px solid rgb(0, 0, 0);
+  word-break: break-all;
+}
