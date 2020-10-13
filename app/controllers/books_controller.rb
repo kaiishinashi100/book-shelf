@@ -22,6 +22,7 @@ class BooksController < ApplicationController
   def show
     @comment = Comment.new
     @book = Book.find(params[:id])
+    @comments = @book.comments.includes(:user)
   end
 
   private

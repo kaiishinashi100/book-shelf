@@ -135,3 +135,15 @@ a {
 .content_title {
   margin-top: 100px;
 }
+
+.comments {
+  display: block;
+  border: 1px solid rgb(0, 0, 0);
+  font-size: 20px;
+  background-color: rgb(139, 242, 242);
+}
+
+.comment-box {
+  background-color: white;
+  border: 1px solid rgb(0, 0, 0);
+}
