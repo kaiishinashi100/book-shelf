@@ -86,3 +86,43 @@ a {
   text-decoration: none;
   color: black;
 }
+
+.not-book-shelf-content {
+  display: flex;
+  justify-content: center;
+}
+
+.not-book-shelf {
+  display: flex;
+
+  flex-wrap: wrap;
+  margin-top: 120px;
+  padding: 5px;
+  height: 70vh;
+  background-color: #CC9966;
+  border: 1px solid rgb(0, 0, 0);
+  width: 70vw;
+}
+
+.shelf-top {
+  width: 90vw;
+  height: auto;
+  background-color: #a37649;
+  border: 1px solid rgb(0, 0, 0);
+  word-break: break-all;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 50px;
+}
+
+.shelf-bottom {
+  width: 90vw;
+  height: auto;
+  background-color: #a37649;
+  border: 1px solid rgb(0, 0, 0);
+  word-break: break-all;
+  margin: 5px;
+}
