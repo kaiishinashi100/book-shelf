@@ -126,3 +126,12 @@ a {
   word-break: break-all;
   margin: 5px;
 }
+
+.user-name {
+  display: flex;
+  margin-top: 100px;
+}
+
+.content_title {
+  margin-top: 100px;
+}
