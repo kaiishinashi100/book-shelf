@@ -1,6 +1,11 @@
 <div class="contents row">
   <div class="content_title" style="background-image: url(<%= "#"%>);">
-    <p><%= @book.title %></p>
+  <div class="image-content">
+    <%= image_tag @book.image,class:"item-box-img" %>
+  </div>
+  <div class="title-content">
+    <%= @book.title %>
+  </div>
     <span class="user-name">
       <a href="/users/<%= @book.user_id %>">
         <span>投稿者</span><%= @book.user.nickname %>
