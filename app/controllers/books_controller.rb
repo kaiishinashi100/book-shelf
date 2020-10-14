@@ -2,7 +2,8 @@ class BooksController < ApplicationController
   before_action :move_to_index, except: [:index]
 
   def index
-    @books = Book.all
+    books = Book.all
+    @books = current_user.books
     @book = Book.new
   end 
 
