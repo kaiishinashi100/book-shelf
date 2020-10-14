@@ -1,16 +1,19 @@
 <div class="contents row">
   <div class="content_title" style="background-image: url(<%= "#"%>);">
-  <div class="image-content">
-    <%= image_tag @book.image,class:"item-box-img" %>
-  </div>
-  <div class="title-content">
-    <%= @book.title %>
-  </div>
-    <span class="user-name">
-      <a href="/users/<%= @book.user_id %>">
-        <span>投稿者</span><%= @book.user.nickname %>
-      </a>
-    </span>
+    <div class="image-content">
+      <%= image_tag @book.image,class:"item-box-img" %>
+    </div>
+    <div class="title-content">
+      <div class="book-title">
+        <span style="color:blue">タイトル・</span>
+        <%= @book.title %> ( <%= @book.genre.name %> )
+      </div>
+
+      <div class="book.publisher">
+         <span style="color:blue">出版社・</span>
+        <%= @book.publisher.name %>
+      </div>
+    </div>
   </div>
   <div class="container">
     <% if current_user %>
