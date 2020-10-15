@@ -1,3 +1,4 @@
+<%= render partial: "book" %>
 <div class="contents row">
   <div class="content_title" style="background-image: url(<%= "#"%>);">
     <div class="image-content">
@@ -34,6 +35,14 @@
             <%= comment.text %>
           </p>
         </div>
+        <% end %>
+        <% @commen.each do |comment| %>
+        
+          <div class="comment-box">
+            <p>
+              <%= comment.text %>
+            </p>
+          </div>
         <% end %>
       <% end %>
     </div>
