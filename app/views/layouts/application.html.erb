@@ -9,15 +9,17 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+<header>
+  <div class="header"></div>
+</header>
   <body>
-    <header>
-
-    </header>
     <%= yield %>
     <footer>
-      <p>
-        Copyright Bookshelf 2020.
-      </p>
+      <div class="footer">
+        <p>
+          Copyright Bookshelf 2020.
+        </p>
+        </div>
     </footer>
   </body>
 </html>

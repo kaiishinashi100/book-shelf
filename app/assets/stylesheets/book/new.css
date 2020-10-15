@@ -187,3 +187,13 @@ a {
   box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
   box-sizing: border-box;
 }
+
+.header {
+  background-color: gray;
+  width: 100vw;
+  height: 20px;
+}
+
+.footer {
+  background-color: gray;
+}
