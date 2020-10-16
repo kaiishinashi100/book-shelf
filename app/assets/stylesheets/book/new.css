@@ -1,5 +1,36 @@
 body {
   background-color: #CCFFCC;
+  display: block;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.header {
+  background-color: green;
+  width: 100vw;
+  height: 40px;
+  -webkit-align-items: flex-start;  /* Safari etc. */
+  -ms-align-items    : flex-start;  /* IE10        */
+  align-items        : flex-start;
+}
+
+.footer {
+  background-color: green;
+  width: 100vw;
+  height: 40px;
+  -webkit-align-items: flex-end;    /* Safari etc. */
+  -ms-align-items    : flex-end;    /* IE10        */
+  align-items        : flex-end;
+}
+
+.image-content {
+  display: flex;
+  justify-content: center;
+}
+
+.book-image {
+  width: 50vw;
+  margin-top: 100px;
 }
 
 ul {
@@ -67,7 +98,12 @@ li {
 }
 
 .grid-6 {
-  background-color: white;
+  font-size: 20px;
+  display: flex;
+}
+
+.grid-6-login {
+
 }
 
 .container {
@@ -200,12 +236,3 @@ a {
   box-sizing: border-box;
 }
 
-.header {
-  background-color: gray;
-  width: 100vw;
-  height: 20px;
-}
-
-.footer {
-  background-color: gray;
-}
