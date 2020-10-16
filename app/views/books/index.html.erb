@@ -1,33 +1,58 @@
 <%= render partial: "book" %>
-<% if @books.length != 0%>
-<div class="book-shelf-top">
-  <div class="book-shelf">
-    <div class="shelf">
-      <div class="contents-row">
-        <% @books.each do |book| %>
-          <div class='item'>
-            <ul class="name">
-              <% if book.id != 0%>
-                <div class="content_post" >
-                <%= link_to book_path(book.id), method: :get do %>
-                  <li class="list">
-                    <%= book.title %>
-                  </li>
-                  <% end %>
-                </div>
-              <% end %>
-            </ul>
-          </div>
-        <% end %>
+
+<% if @books.length >= 10%>
+  <div class="book-shelf-top">
+    <div class="book-shelf">
+      <div class="shelf">
+        <div class="contents-row">
+          <% @books.each do |book| %>
+            <div class='item'>
+              <ul class="name">
+                <% if book.id != 0%>
+                  <div class="content_post" >
+                    <%= link_to book_path(book.id), method: :get do %>
+                      <li class="list">
+                        <%= book.title %>
+                      </li>
+                    <% end %>
+                  </div>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<% else %>
-<div class="not-book-shelf-content">
-  <div class="not-book-shelf">
-    <div class="shelf-top">本を投稿しよう</div>
-    <div class="shelf-bottom"></div>
+<% elsif @books.length != 0%>
+  <div class="book-shelf-top">
+    <div class="book-shelf-low">
+      <div class="shelf">
+        <div class="contents-row">
+          <% @books.each do |book| %>
+            <div class='item'>
+              <ul class="name">
+                <% if book.id != 0%>
+                  <div class="content_post" >
+                    <%= link_to book_path(book.id), method: :get do %>
+                      <li class="list">
+                        <%= book.title %>
+                      </li>
+                    <% end %>
+                  </div>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+<% else %>
+  <div class="not-book-shelf-content">
+    <div class="not-book-shelf">
+      <div class="shelf-top">本を投稿しよう</div>
+      <div class="shelf-bottom"></div>
+    </div>
+  </div>
 <% end %>
