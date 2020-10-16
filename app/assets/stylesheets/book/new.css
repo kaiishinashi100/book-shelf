@@ -126,21 +126,48 @@ li {
   width: 70vw;
 }
 
-.book-shelf-low {
+.book-shelf-medium {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 120px;
   padding: 5px;
-  height: 380px;
+  height: 405px;
   background-color: #CC9966;
   border: 1px solid rgb(0, 0, 0);
   width: 70vw;
 }
 
+.book-shelf-few {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 120px;
+  padding: 5px;
+  height: 405px;
+  background-color: #CC9966;
+  border: 1px solid rgb(0, 0, 0);
+  width: 70vw;
+}
+
+.book-shelf-few-bottom {
+  background-color: #CC9966;
+  border: 1px solid rgb(0, 0, 0);
+  width: 70vw;
+  height: 190px;
+}
+
 .shelf {
   width: 70vw;
   height: auto;
+  background-color: #CC9966;
+  border: 1px solid rgb(0, 0, 0);
+  word-break: break-all;
+}
+
+.shelf-few {
+  width: 70vw;
+  height: 200px;
   background-color: #CC9966;
   border: 1px solid rgb(0, 0, 0);
   word-break: break-all;
