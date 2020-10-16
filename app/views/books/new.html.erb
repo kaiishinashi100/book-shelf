@@ -1,23 +1,26 @@
 <%= render partial: "book" %>
 <div class="contents row">
   <div class="container">
-    <h3>本を登録する</h3>
+    <h3>本棚に本を追加しましょう</h3>
     <%= form_with(model: @book, local: true) do |form| %>
     <div class="img-upload">
-      <div class="weight-bold-text">
-        イメージ画像
-        <span class="indispensable">必須</span>
-      </div>
       <div class="click-upload">
-        <p>
-          クリックしてファイルをアップロード
-        </p>
+        <p>・イメージ画像を選んでください</p>
         <%= form.file_field :image, id:"item-image" %>
       </div>
     </div>
+    <div class="genre-content">
+      <p>・本のジャンルを選んでください</p>
       <%= form.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+    </div>
+    <div class="publisher-content">
+      <p>・本の出版社を選んでください</p>
       <%= form.collection_select(:publisher_id, Publisher.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+    </div>
+    <div class="book-title-content">
+      <p>・本のタイトルを入力してください</p>
       <%= form.text_field :title, placeholder: "本のタイトル" %>
+    </div>
       <%= form.submit "SEND" %>
     <% end %>
   </div>

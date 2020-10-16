@@ -24,7 +24,8 @@ class BooksController < ApplicationController
     @comment = Comment.new
     @book = Book.find(params[:id])
     @comments = @book.comments.includes(:user)
-    @commen = Comment.all
+    @anotherComment = Comment.all
+    @title = Comment.find(params[:id])
   end
 
   private
