@@ -1,0 +1,12 @@
+<div class="header_right">
+  <div class="header__bar_row">
+    <h1 class="grid-6-name"><a href="/books/#{current_user.id}/books">マイページ</a></h1>
+    <h1 class="grid-6_name"><%= @user.nickname%>の本棚</h1>
+  </div>
+  <div class="user_nav_grid-5">
+    <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+  </div>
+  <div class="user_nav_grid-6">
+    <a class="post" href="/books/new">本を追加する</a>
+  </div> 
+</div>

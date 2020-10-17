@@ -101,10 +101,6 @@ li {
   display: flex;
 }
 
-.grid-6-login {
-
-}
-
 .container {
   margin: 70px 50px;
   padding: 30px;
@@ -283,4 +279,8 @@ a {
 
 .container-comment {
   width: 90vw;
+}
+
+.grid-6-name {
+  font-size: 20px;
 }

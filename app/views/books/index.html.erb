@@ -4,23 +4,7 @@
   <div class="book-shelf-top">
     <div class="book-shelf">
       <div class="shelf">
-        <div class="contents-row">
-          <% @books.each do |book| %>
-            <div class='item'>
-              <ul class="name">
-                <% if book.id != 0%>
-                  <div class="content_post" >
-                    <%= link_to book_path(book.id), method: :get do %>
-                      <li class="list">
-                        <%= book.title %>
-                      </li>
-                    <% end %>
-                  </div>
-                <% end %>
-              </ul>
-            </div>
-          <% end %>
-        </div>
+        <%= render partial: "shelf" %>
       </div>
     </div>
   </div>
@@ -28,23 +12,7 @@
   <div class="book-shelf-top">
     <div class="book-shelf-medium">
       <div class="shelf">
-        <div class="contents-row">
-          <% @books.each do |book| %>
-            <div class='item'>
-              <ul class="name">
-                <% if book.id != 0%>
-                  <div class="content_post" >
-                    <%= link_to book_path(book.id), method: :get do %>
-                      <li class="list">
-                        <%= book.title %>
-                      </li>
-                    <% end %>
-                  </div>
-                <% end %>
-              </ul>
-            </div>
-          <% end %>
-        </div>
+        <%= render partial: "shelf" %>
       </div>
     </div>
   </div>
@@ -52,26 +20,9 @@
   <div class="book-shelf-top">
     <div class="book-shelf-few">
       <div class="shelf-few">
-        <div class="contents-row">
-          <% @books.each do |book| %>
-            <div class='item'>
-              <ul class="name">
-                <% if book.id != 0%>
-                  <div class="content_post" >
-                    <%= link_to book_path(book.id), method: :get do %>
-                      <li class="list">
-                        <%= book.title %>
-                      </li>
-                    <% end %>
-                  </div>
-                <% end %>
-              </ul>
-            </div>
-          <% end %>
-        </div>
+        <%= render partial: "shelf" %>
       </div>
-      <div class="book-shelf-few-bottom">
-      </div>
+      <div class="book-shelf-few-bottom"></div>
     </div>
   </div>
 <% else %>
