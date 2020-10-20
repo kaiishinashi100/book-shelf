@@ -1,4 +1,4 @@
-lock "~> 3.14.1"
+lock "3.14.1"
 set :application, "book-shelf"
 set :repo_url,  'git@github.com:kaiishibashi100/book-shelf.git'
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
