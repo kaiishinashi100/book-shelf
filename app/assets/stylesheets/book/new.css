@@ -147,7 +147,7 @@ li {
 }
 
 .book-shelf-few-bottom {
-  background-color: #CC9966;
+  background-color: #a37649;
   border: 1px solid rgb(0, 0, 0);
   width: 70vw;
   height: 190px;
@@ -156,7 +156,7 @@ li {
 .shelf {
   width: 70vw;
   height: auto;
-  background-color: #CC9966;
+  background-color: #a37649;
   border: 1px solid rgb(0, 0, 0);
   word-break: break-all;
 }
@@ -164,7 +164,7 @@ li {
 .shelf-few {
   width: 70vw;
   height: 200px;
-  background-color: #CC9966;
+  background-color: #a37649;
   border: 1px solid rgb(0, 0, 0);
   word-break: break-all;
 }
